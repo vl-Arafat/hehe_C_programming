@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+
+int num, i, range;
+printf("Enter a number :");
+scanf("%d", &num);
+
+printf("enter range :");
+scanf("%d", &range);
+
+while(i<=range){
+printf("%d * %d = %d\n", num, i, num *i);
+i++;}
+
+return 0;
+}
