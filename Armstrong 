@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+int num, result=0, rem, org;
+
+printf("Enter a number : ");
+scanf("%d", &num);
+  org = num;
+  
+  while (num!=0){
+    rem = num%10;
+    result += rem * rem * rem;
+    num /= 10;
+    }
+    
+    if (org == result){
+    printf("it is armstrong");
+  }
+  else{
+   printf(" it is not armstrong");
+}
+   
+   return 0;
+   }
