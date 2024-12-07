@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int row, col;
+    int ara[10][10];
+
+    printf("Enter a number : ");
+    scanf("%d\n", &row);
+
+    for(col=0; col<11; col++)
+    {
+        ara[row][col]= row * col;
+    }
+
+    for(col=0; col<11; col++)
+    {
+        printf("%d x %d = %d\n", row, col, ara[row][col]);
+    }
+
+    return 0;
+}
