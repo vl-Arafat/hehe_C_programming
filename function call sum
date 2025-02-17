@@ -1,0 +1,15 @@
+#include<stdio.h>
+void sum(int a,  int b){
+		int sum;
+        sum = a+b;
+        printf("Sum from func: %d", sum);
+        }
+int main()
+{
+    int a, b;
+    printf("Enter a & b :");
+    scanf("%d %d", &a, &b);
+    sum(a,b);
+    printf("Sum from main : %d", a+b);
+    return 0;
+}
